@@ -4,25 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component libraray for portfolio</title>
+    <!-- css way 1: style tag
+    <style>
+        body{
+            color : purple;
+        }
+    </style> -->
+
+
+    <!-- way 3 of css/: external link  -->
+    <link href = "styles.css" rel ="stylesheet"/>
 </head>
 <body>
-    <h1> It's Rupali Priya's component library</h1>
-    <p>I am trying to learn web development by tanay pratap and making a library that would help in making my portfolio</p>
+    <h1 id="comp_header" > It's Rupali Priya's component library</h1>
+    <!-- style = "color: blue" ....css way 2-->
+    <p class = " para">I am trying to learn web development by tanay pratap and making a library that would help in making my portfolio</p>
     <hr>
 
     <h2>@typograpy</h2>
     <h1>My Introduction</h1>
     <h2>Currently studying MCA from NIT Kurukshetra</h2>
     <p>Earlier Ihave B.Sc(H) Instrumentation from SRCASW,University of Delhi</p>
-    <small>Looking forward for a better future</small>
+    <small class = " para">Looking forward for a better future</small>
     <hr>
 
     <h2>@container</h2>
     <h3>Fluid Container</h3>
-    <div>it will go till the end of the page</div>
+    <div class = " para">it will go till the end of the page</div>
 
     <h3>center Container</h3>
-    <div>it will go upto a specified width</div>
+    <div class = " para">it will go upto a specified width</div>
     <hr>
 
     <h3>@links</h3>
@@ -51,15 +62,57 @@
         <li>css</li>
         <li>javascript</li>
     </ol>
+
+    <h3>@nav</h3>
+    <nav>
+        <div>BeingBrand</div>
+        <ul>
+            <li>
+                <a href="/">Home</a>
+            </li>
+            <li>
+                <a href="/">Projects</a>
+            </li>
+            <li>
+                <a href="/"> Certificates</a>
+            </li>
+            <li>
+                <a href="/">Blogs</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <h3> header</h3>
+
+    <header>
+        <img src="images/theme.svg"/>
+        <h2>heading inside theme</h2>
+    </header>
+
+    <hr>
+    <h3>@section</h3>
+    <section>
+        <h2>white section</h2>
+        <p>this will have white background</p>
+    </section>
+    <section>
+        <h2>off white section</h2>
+        <p>this will have grey background</p>
+    </section>
+
+    <hr>
+    <h3>@footer</h3>
+
+    <footer>
+        <div>some small headings inside footer</div>
+        <ul>
+            <li>social one</li>
+            <li>social two</li>
+            <li>social three</li>
+        </ul>
+    </footer>
     
-
-
-
-
-
-
-
-
 
 
 </body>
