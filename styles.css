@@ -1,19 +1,11 @@
-h1{
-    color:goldenrod;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-h3{
-    color: blue;
-}
 
-h2{
-    color:green;
-}
-
-#comp_header{
-    color : brown;
-}
-
-.para{
-    color: gray;
+body{
+    font-family: "Noto Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
