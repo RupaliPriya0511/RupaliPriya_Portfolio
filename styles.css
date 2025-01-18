@@ -1,11 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 
-body{
-    font-family: "Noto Sans", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+:root{
+  --primary-color:#fb7185;
+  --dark-gray:#6B7280;
 }
+body{
+  font-family: "Playfair Display", serif;
+  
+}
+hr{
+  margin: 2rem 0rem;
+}
+
+/** container**/
+.container{
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+
+.container-center{
+  max-width: 600px;
+
+  margin:auto;
+}
+.container-fluid {
+  width: 100%;
+  padding: 1rem;
+}
+
+
+/** links**/
+.link{
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+    
+}
+.primary-link {
+  background-color: var(--primary-color);
+  border-radius: 0.5rem;
+  color: white; /* Use white to contrast the black background */
+  border: 1px solid var(--primary-color);
+}
+
+.secondary-link {
+  background-color: var(--primary-color); /* Add background to match the box */
+  border-radius: 0.5rem;
+  color: white;
+  border: 1px solid var(--primary-color);
+}
+
+.list-non-bullet{
+  list-style:none;
+}
+
+list-item-inline{
+  display:inline;
+  padding : 0rem 0.5rem;
+  margin-right: 1rem;
+}
+
+.navigation {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom-left-radius: 1rem;
+  border-top-right-radius: 1rem ;
+}
+
+.navigation .link {
+  color: white;
+}
+.navigation .link:hover {
+  text-decoration: underline;
+}
+
+
+.list-non-bullet {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+/* Display list items horizontally */
+.list-item-inline {
+  margin-right: 20px; /* Adjust space between items */
+}
+
+/* Optional: Styling for links */
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.navigation .link-active{
+  font-weight: bold;
+}
+/** header **/
+
+.hero{
+  padding: 2rem;
+}
+
+.hero .hero-img{
+  max-width: 350px;
+  display: block;
+  margin: auto;
+}
+
+.hero .hero-heading {
+  color:var(--dark-gray);
+  
+}
+
+.hero .hero-heading .heading-inverted{
+  color: var(--primary-color);
+}
+
+
+
+
+
+
+
+
+
+
+

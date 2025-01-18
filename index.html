@@ -23,54 +23,58 @@
 
     <h2>@container</h2>
     <h3>Fluid Container</h3>
-    <div >it will go till the end of the page</div>
+    <div class=" container-fluid" >it will go till the end of the page</div>
 
     <h3>center Container</h3>
-    <div >it will go upto a specified width</div>
+    <div class = "container" >it will go upto a specified width</div>
     <hr>
 
     <h3>@links</h3>
-    <a href="/"> primarylink</a>
-    <a href="/">secondarylink</a>
+
+    <a href="/" class="primary-link">Primary Link</a>
+    <a href="/" class=" secondary-link">Secondary Link</a>
+
+   
 
     <hr>
     <h3>@lists</h3>
     <h4>unordered list</h4>
-    <ul>
+    <p>this list will not have the bullet</p>
+    <ul class="list-non-bullet">
         <li> item one</li>
         <li>item two</li>
         <li>item three</li>
     </ul>
 
     <h4>unordered inline list</h4>
-    <ul>
-        <li> inline list one</li>
-        <li>inline list two</li>
-        <li>inline list three </li>
+    <ul class="list-non-bullet">
+        <li class="list-item-inline"> inline list one</li>
+        <li class="list-item-bullet">inline list two</li>
+        <li class="list-item-bullet">inline list three </li>
     </ul>
 
     <h4>reverse ordered list</h4>
-    <ol>
+    <ol reversed>
         <li>html</li>
         <li>css</li>
         <li>javascript</li>
     </ol>
 
     <h3>@nav</h3>
-    <nav>
-        <div>BeingBrand</div>
-        <ul>
-            <li>
-                <a href="/">Home</a>
+    <nav class = " navigation container">
+        <div class="nav-brand">BeingBrand</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link link-active" href="/">Home</a>
             </li>
-            <li>
-                <a href="/">Projects</a>
+            <li class-"list-item-inline">
+                <a class="link" href="/">Projects</a>
             </li>
-            <li>
-                <a href="/"> Certificates</a>
+            <li class-"list-item-inline">
+                <a class="link" href="/"> Certificates</a>
             </li>
-            <li>
-                <a href="/">Blogs</a>
+            <li class-"list-item-inline">
+                <a class="link" href="/">Blogs</a>
             </li>
         </ul>
 
@@ -78,9 +82,9 @@
 
     <h3> header</h3>
 
-    <header>
-        <img src="images/theme.svg"/>
-        <h2>heading inside theme</h2>
+    <header class="hero">
+        <img class="hero-img" src="images/theme.svg"/>
+        <h2 class="hero-heading">Rupali Priya the <span class = "heading-inverted">Web Developer</span></h2>
     </header>
 
     <hr>
