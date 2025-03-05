@@ -3,121 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Component libraray for portfolio</title>
-    
-    <link href = "styles.css" rel ="stylesheet"/>
+    <title>Home|MyPortfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1 > It's Rupali Priya's component library</h1>
-   
-    <p >I am trying to learn web development by tanay pratap and making a library that would help in making my portfolio</p>
-    <hr>
-
-    <h2>@typograpy</h2>
-    <h1>My Introduction</h1>
-    <h2>Currently studying MCA from NIT Kurukshetra</h2>
-    <p>Earlier Ihave B.Sc(H) Instrumentation from SRCASW,University of Delhi</p>
-    <small >Looking forward for a better future</small>
-    <p>this para will have <strong>bold</strong> text.</p>
-    <hr>
-
-    <h2>@container</h2>
-    <h3>Fluid Container</h3>
-    <div class=" container-fluid" >it will go till the end of the page</div>
-
-    <h3>center Container</h3>
-    <div class = "container" >it will go upto a specified width</div>
-    <hr>
-
-    <h3>@links</h3>
-
-    <a href="/" class="primary-link">Primary Link</a>
-    <a href="/" class=" secondary-link">Secondary Link</a>
-
-   
-
-    <hr>
-    <h3>@lists</h3>
-    <h4>unordered list</h4>
-    <p>this list will not have the bullet</p>
-    <ul class="list-non-bullet">
-        <li> item one</li>
-        <li>item two</li>
-        <li>item three</li>
-    </ul>
-
-    <h4>unordered inline list</h4>
-    <ul class="list-non-bullet">
-        <li class="list-item-inline"> inline list one</li>
-        <li class="list-item-bullet">inline list two</li>
-        <li class="list-item-bullet">inline list three </li>
-    </ul>
-
-    <h4>reverse ordered list</h4>
-    <ol reversed>
-        <li>html</li>
-        <li>css</li>
-        <li>javascript</li>
-    </ol>
-
-    <h3>@nav</h3>
-    <nav class = " navigation container">
+    <nav class="navigation container">
         <div class="nav-brand">BeingBrand</div>
         <ul class="list-non-bullet nav-pills">
             <li class="list-item-inline">
                 <a class="link link-active" href="/">Home</a>
             </li>
-            <li class-"list-item-inline">
+            <li class="list-item-inline">
                 <a class="link" href="/">Projects</a>
             </li>
-            <li class-"list-item-inline">
-                <a class="link" href="/"> Certificates</a>
+            <li class="list-item-inline">
+                <a class="link" href="/">Certificates</a>
             </li>
-            <li class-"list-item-inline">
+            <li class="list-item-inline">
                 <a class="link" href="/">Blogs</a>
             </li>
         </ul>
-
     </nav>
-
-    <h3> header</h3>
-
     <header class="hero">
-        <img class="hero-img" src="images/theme.svg"/>
-        <h2 class="hero-heading">Rupali Priya the <span class = "heading-inverted">Web Developer</span></h2>
+        <img class="hero-img" src="images/theme.svg" alt="Theme Image">
+        <h2 class="hero-heading">Rupali Priya, the <span class="heading-inverted">Web Developer</span></h2>
     </header>
-
-    <hr>
-    <h3>@section</h3>
-    <section class="section">
-        <div class="container container-center">
-            <h1>white section</h1>
-            <p>this will have white background</p>
-        </div>
+    
         
-    </section>
-    <section  class="section ow">
+    <section class="section ow">
         <div class="container container-center">
-            <h1>off white section</h1>
-            <p>this will have grey background</p>
-        </div>   
+            <h1>Technologies</h1>
+            <p>Proficient in Python, Java, C++, and SQL, 
+            leveraging them for backend development, data processing, and database management.</p>
+            <p>Experienced in JavaScript, HTML, and CSS, with hands-on expertise in building responsive web applications.</p>
+            <p>Utilized Git & GitHub for version control and collaborative development.</p>
+
+        </div>
+    </section>
+    <section class="section">
+        <div class = "container container-center">
+            <h1>Projects</h1>
+            <p>I will be showcasing my projects live, demonstrating practical solutions in web development, cybersecurity, mobile apps, and ontology using modern technologies.</p>
+            <a href="/" class="primary-link">Primary Link</a>
     </section>
 
-    <hr>
-    <h3>@footer</h3>
+    <section class="section ow">
+        <div class="container container-center">
+            <h1>Blogs</h1>
+            <p>currently non available</p>
 
+        </div>
+    </section>
+   
+    <hr>
     <footer>
-        <div class="footer-heading">some small headings inside footer</div>
+        <h3>My Online Presence</h3>
+        <!-- <div class="footer-heading">Some small headings inside the footer</div> -->
         <ul class="social-links">
-            <li>
-                <a class="links" href = "/"></a>
-            </li>
-            <li>social two</li>
-            <li>social three</li>
+            <li><a class="link" href="www.linkedin.com/in/rupalipriyajha">LinkedIn</a></li>
+            <li><a class="link" href="https://github.com/RupaliPriya0511">GitHub</a></li>
+            <li><a class="link" href="https://www.geeksforgeeks.org/user/rupalijha0511/">geeksforgeeks</a></li>
         </ul>
     </footer>
     
-
-
 </body>
 </html>
