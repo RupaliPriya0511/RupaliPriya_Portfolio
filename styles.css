@@ -4,6 +4,7 @@
 :root{
   --primary-color:#fb7185;
   --dark-gray:#6B7280;
+  --off-white:#F3F4F6;
 }
 body{
   font-family: "Playfair Display", serif;
@@ -120,7 +121,16 @@ list-item-inline{
   color: var(--primary-color);
 }
 
-
+.section {
+  padding: 2 rem;
+}
+.section h1{
+  text-align: center;
+}
+.ow {
+  background-color: var(--off-white);
+}
+/** footer**/
 
 
 
