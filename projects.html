@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Navigation Bar -->
+    <nav class="navigation container">
+        <div class="nav-brand" style="font-weight: bolder;font-size: xx-large;">A Tech Enthusiast</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline"><a class="link" href="/">Home</a></li>
+            <li class="list-item-inline"><a class="link link-active" href="/">Projects</a></li>
+            <li class="list-item-inline"><a class="link" href="/">Certificates</a></li>
+            <li class="list-item-inline"><a class="link" href="/">Blogs</a></li>
+        </ul>
+    </nav>
+
+    <!-- Project Section -->
+    <div class="projects-container">
+        
+        <div class="project-img">
+            <img src="images/project.svg" alt="Projects">
+        </div>
+
+        <div class="project-list" id="project-list">
+            <!-- Project cards will be dynamically added here -->
+        </div>
+    </div>
+
+    <!-- Floating Add Project Button -->
+    <div class="add-project">
+        <button class="btn" onclick="openForm()">+ Add New Project</button>
+    </div>
+
+    <!-- Add Project Form (Hidden by Default) -->
+    <div id="project-form" class="form-popup">
+        <div class="form-container">
+            <h2>Add New Project</h2>
+            <label for="title">Project Title</label>
+            <input type="text" id="title" placeholder="Enter project title" required>
+
+            <label for="date">Completion Date</label>
+            <input type="date" id="date" required>
+
+            <label for="description">Description</label>
+            <textarea id="description" placeholder="Project description..." required></textarea>
+            
+            <label for="technologies">Technologies Used</label>
+            <input type="text" id="technologies" placeholder="e.g. HTML, CSS, React, Firebase" required>
+
+
+            <label for="link">Live Project Link</label>
+            <input type="url" id="link" placeholder="https://yourproject.com" required>
+            
+            <label for="link">Source Link</label>
+            <!-- <input type="url" id="Source-link" placeholder="https://yourproject.com" required> -->
+            <input type="url" id="source" placeholder="https://yourproject.com" required>
+
+
+            <button class="btn" onclick="addProject()">Add Project</button>
+            <button class="btn close-btn" onclick="closeForm()">Cancel</button>
+        </div>
+    </div>
+    <hr>
+    <footer>
+        <h3>My Online Presence</h3>
+       
+        <ul  class="social-links">
+            
+
+            
+            <li>
+                <a href="https://www.linkedin.com/in/rupalipriyajha" target="_blank">
+                    <img src="icons/linkedin.svg" alt="LinkedIn">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/RupaliPriya0511" target="_blank">
+                    <img src="icons/github.svg" alt="GitHub">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.geeksforgeeks.org/user/rupalijha0511/" target="_blank">
+                    <img src="icons/geeksforgeeks.svg" alt="GeeksforGeeks">
+                </a>
+            </li>
+            <li>
+                <a href="mailto:rupalijha0511@gmail.com">
+                    <img src="icons/gmail.svg" alt="Gmail">
+                </a>
+            </li>
+            <li>
+                <a href="https://leetcode.com/u/RupaliPriya/" target="_blank">
+                    <img src="icons/leetcode.png" alt="leetcode">
+                </a>
+            </li>
+        </ul>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

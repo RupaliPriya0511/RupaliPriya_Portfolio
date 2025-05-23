@@ -8,6 +8,11 @@
 
 body {
   font-family: "Playfair Display", serif;
+ 
+}
+.nav-brand {
+  width: 30%;
+  height: 100px;
 }
 
 hr {
@@ -35,12 +40,40 @@ hr {
   padding: 0.5rem 1rem;
   color: black;
 }
+.add-project {
+  font-size: x-large;
+  font-weight: bold;
+  text-decoration:none;
+  background-color: rgb(226, 217, 219); 
+  color: #0c0c0c;
+  border-radius: 0cap;
+  margin-top: 2px;
+  margin-bottom:15px;
+  border-radius: 14px;
+  height: 50px;
+  justify-content: center; /* Center horizontally */
+    align-items: center;
+    margin-top: 8px;
+  display: flex;
+}
+.project-img {
+  margin-top: 35px;
+}
+.add-project .btn {
+  display: inline-block;
+  padding: 12px 24px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(91, 29, 29);
+   
+}
 
 .primary-link {
   background-color: var(--primary-color);
-  border-radius: 0.5rem;
-  color: white;
-  border: 1px solid var(--primary-color);
+  border-radius: 0.2rem;
+  color: rgb(14, 10, 10);
+  border: 9px solid var(--primary-color);
 }
 
 .secondary-link {
@@ -56,11 +89,18 @@ hr {
   padding: 0;
   margin: 0;
 }
+.blog-part {
+  font-weight: bold;
+}
+.blog-button {
+  background-color: #fb7185;
+}
 
 .list-item-inline {
   display: inline;
   padding: 0 0.5rem;
   margin-right: 1rem;
+  font-size: larger;
 }
 
 /* Navigation */
@@ -83,6 +123,9 @@ hr {
 }
 
 .navigation .link-active {
+  font-weight:bolder;
+}
+.list-item-inline {
   font-weight: bold;
 }
 
@@ -127,8 +170,535 @@ footer {
   font-weight: bold;
 
 }
+/* .social-links li {
+  display: inline-block;
+} */
+.social-links a img {
+  width: 40px; /* Set icon size */
+  height: 40px;
+  transition: transform 0.3s ease-in-out;
+}
 
+.social-links a img:hover {
+  transform: scale(1.2); /* Slight zoom on hover */
+}
 .social-links {
   list-style: none;
   padding: 0;
+  /* margin-left: 42%; */
+  justify-content: center;
+  display: flex;
+  gap: 25px;
 }
+
+
+
+
+
+
+
+
+/* for projects  */
+
+
+/* Projects Container */
+.projects-container {
+  
+ display: flex; 
+ flex-direction : column;
+ align-items: center;
+}
+
+/* Theme Image */
+.project-img img {
+  max-width: 300px;
+  display: block;
+  margin: auto;
+}
+
+.project-img {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+
+/* Project List */
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  max-width: 1000px;
+  justify-content: center;
+  gap: 20px; 
+} 
+
+/* Project Cards */
+.project-card {
+    background: rgb(247, 233, 233);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 325px;
+    transition: 0.3s;
+}
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card h3 {
+  margin: 10px 0;
+  color: #333;
+}
+
+.project-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+
+/* 
+.project-card .btn {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #fb7185;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+} */
+
+/* Add Project Button */
+.add-project {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.add-project .btn {
+  background-color: #1f1c1c;
+  color: white;
+  font-size: 18px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-project .btn:hover {
+  background-color: #d63c5d;
+}
+
+/* Form Popup */
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(253, 244, 244);
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 380px;
+  text-align: center;
+}
+
+.form-container h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.form-container input, .form-container textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #5f5c5c;
+  border-radius: 5px;
+}
+
+.form-container .btn {
+  background-color: #f96177;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 100%;
+  font-weight: bolder;
+}
+.form-container .btn:hover {
+  background-color: #e64560;
+}
+
+/* Close Button */
+.close-btn {
+  background-color: #555;
+  margin-top: 10px;
+}
+
+.close-btn:hover {
+  background-color: #333;
+}
+
+/* Remove Project Button */
+.remove-btn {
+  /* background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bolder; */
+
+  margin-top: 0.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  /* background-color: #cc0000; */
+  background-color: #f43f5e;
+  
+}
+
+.view-btn {
+  /* background-color: #e64560; */
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: small;
+  font-weight: bolder;
+  
+}
+.view-btn:hover {
+  background-color: #f43f5e;
+}
+
+.source {
+  background-color: #ff4d4d;
+   color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-weight: bolder; 
+}
+
+/* certification */
+
+.certificate-img img {
+  max-width: 300px;
+  display: block;
+  margin: auto;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.add-certificate {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.add-certificate .btn {
+  background-color: #1f1c1c;
+  color: white;
+  font-size: 18px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+.certificate-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  max-width: 1000px;
+  justify-content: center;
+  gap: 20px; 
+} 
+
+
+
+  .certificate-card {
+    background: rgb(247, 233, 233);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 300px;
+    transition: 0.3s;
+}
+.certificate-card:hover {
+  transform: scale(1.05);
+}
+
+.certificate-card h3 {
+  margin: 10px 0;
+  color: #333;
+}
+
+.certificate-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.certificates-container {
+  
+  display: flex; 
+  flex-direction : column;
+  align-items: center;
+ 
+ }
+
+ .blogs-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.blog-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 15px 0;
+  padding: 15px;
+  background-color: #f5b8b8;
+}
+
+.blog-card img {
+  max-width: 100%;
+  margin-top: 10px;
+}
+
+.add-blog-box {
+  margin-top: 30px;
+  padding: 15px;
+  background-color: #eb5d5d;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.blogs-container img{
+    
+    max-width: 300px;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.add-blogs {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.add-blogs .btn {
+  background-color: #1f1c1c;
+  color: white;
+  font-size: 18px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  padding: 30px;
+  z-index: 1000;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 600px;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #1f1c1c;
+}
+
+.form-container label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #444;
+}
+
+.form-container input[type="text"],
+.form-container input[type="date"],
+.form-container input[type="url"],
+.form-container input[type="file"],
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.form-container textarea {
+  resize: vertical;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #1f1c1c;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #333;
+}
+
+.close-btn {
+  background-color: #777;
+  margin-left: 10px;
+}
+
+.close-btn:hover {
+  background-color: #999;
+}
+.blog-list-container {
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 900px;
+}
+
+.blog-card {
+  background-color: #edbcbc;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.blog-info h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.blog-date {
+  color: #0c0808;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.blog-snippet {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.blog-full-content {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+.read-more-btn {
+  background-color: #1f1c1c;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.read-more-btn:hover {
+  background-color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+.blog-card {
+  border: 1px solid #c5b8b8;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  background-color: #f5dbdb;
+}
+
+.blog-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.blog-info h3 {
+  margin-top: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.read-more-btn {
+  margin-top: 0.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.read-more-btn:hover {
+  background-color: #f43f5e;
+}
+
+
