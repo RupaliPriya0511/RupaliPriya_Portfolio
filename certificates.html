@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Certificates</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Navigation Bar -->
+    <nav class="navigation container">
+        <div class="nav-brand" style="font-weight: bolder;font-size: xx-large;">A Tech Enthusiast</div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline"><a class="link" href="/">Home</a></li>
+            <li class="list-item-inline"><a class="link" href="/">Projects</a></li>
+            <li class="list-item-inline"><a class="link link-active" href="/">Certificates</a></li>
+            <li class="list-item-inline"><a class="link" href="/">Blogs</a></li>
+        </ul>
+    </nav>
+
+    <!-- Certificates Section -->
+    <div class="certificates-container">
+        
+        <div class="certificate-img">
+            <img src="images/certificate.svg" alt="Certificates">
+        </div>
+
+        <div class="certificate-list" id="certificate-list">
+            <!-- Certificates will be dynamically added here -->
+        </div>
+    </div>
+
+    <!-- Floating Add Certificate Button -->
+    <div class="add-certificate">
+        <button class="btn" onclick="openForm()">+ Add New Certificate</button>
+    </div>
+
+    <!-- Add Certificate Form (Hidden by Default) -->
+    <div id="certificate-form" class="form-popup">
+        <div class="form-container">
+            <h2>Add New Certificate</h2>
+            <label for="cert-title">Certificate Title</label>
+            <input type="text" id="title" placeholder="Enter certificate title" required>
+
+            <label for="cert-date">Issued Date</label>
+            <input type="date" id="date" required>
+
+            <label for="cert-org">Issuing Organization</label>
+            <input type="text" id="org" placeholder="Enter organization name" required>
+
+            <label for="cert-description">Description</label>
+            <textarea id="description" placeholder="Enter certificate description" required></textarea>
+
+            <label for="cert-link">Certificate Link</label>
+            <input type="url" id="link" placeholder="https://yourcertificate.com" required>
+
+            <button class="btn" onclick="addCertificate()">Add Certificate</button>
+            <button class="btn close-btn" onclick="closeForm()">Cancel</button>
+        </div>
+    </div>
+    <hr>
+    <footer>
+        <h3>My Online Presence</h3>
+        <ul class="social-links">
+            <li>
+                <a href="https://www.linkedin.com/in/rupalipriyajha" target="_blank">
+                    <img src="icons/linkedin.svg" alt="LinkedIn">
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/RupaliPriya0511" target="_blank">
+                    <img src="icons/github.svg" alt="GitHub">
+                </a>
+            </li>
+             <li>
+                <a href="https://www.geeksforgeeks.org/user/rupalijha0511/" target="_blank">
+                    <img src="icons/geeksforgeeks.svg" alt="GeeksforGeeks">
+                </a>
+            </li>
+            <li>
+                <a href="mailto:rupalijha0511@gmail.com">
+                    <img src="icons/gmail.svg" alt="Gmail">
+                </a>
+            </li>
+            <li>
+                <a href="https://leetcode.com/u/RupaliPriya/" target="_blank">
+                    <img src="icons/leetcode.png" alt="leetcode">
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="certificates.js"></script>
+</body>
+</html>
