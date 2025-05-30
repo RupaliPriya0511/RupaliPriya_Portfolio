@@ -222,12 +222,24 @@
 
 const BASE_URL = 'http://localhost:5000';
 
+// function openForm() {
+//     document.getElementById("certificate-form").style.display = "flex";
+// }
+
+// function closeForm() {
+//     document.getElementById("certificate-form").style.display = "none";
+// }
+
+
+
 function openForm() {
-    document.getElementById("certificate-form").style.display = "flex";
+  document.getElementById("certificate-form").style.display = "block";
+  document.getElementById("overlay").style.display = "block";
 }
 
 function closeForm() {
-    document.getElementById("certificate-form").style.display = "none";
+  document.getElementById("certificate-form").style.display = "none";
+  document.getElementById("overlay").style.display = "none";
 }
 
 async function addCertificate() {
@@ -291,7 +303,7 @@ function addCertificateToUI(certificate) {
         <button class="remove-btn" onclick="requestDelete(this)">Remove</button>
     `;
 
-    document.getElementById("certificate-list").appendChild(card);
+    document.getElementById("certificate-list").prepend(card);
 }
 
 async function requestDelete(button) {

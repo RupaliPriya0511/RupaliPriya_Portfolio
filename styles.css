@@ -229,17 +229,28 @@ footer {
 
   max-width: 1000px;
   justify-content: center;
-  gap: 20px; 
+  gap: 10px; 
+
+
 } 
 
 /* Project Cards */
 .project-card {
-    background: rgb(247, 233, 233);
+    /* background: rgb(247, 233, 233);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
     width: 325px;
+    
+    transition: 0.3s; */
+
+    background: rgb(247, 233, 233);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 300px;
     transition: 0.3s;
+    margin-left: 10px;
 }
 .project-card:hover {
   transform: scale(1.05);
@@ -291,7 +302,22 @@ footer {
   background-color: #d63c5d;
 }
 
-/* Form Popup */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
 .form-popup {
   display: none;
   position: fixed;
@@ -333,7 +359,7 @@ footer {
   background-color: #e64560;
 }
 
-/* Close Button */
+
 .close-btn {
   background-color: #555;
   margin-top: 10px;
@@ -341,7 +367,99 @@ footer {
 
 .close-btn:hover {
   background-color: #333;
+} */ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.form-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 25px 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  z-index: 1000;
 }
+
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #222;
+  font-size: 20px;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  resize: vertical;
+}
+
+.form-container .btn {
+  background-color: #f96177;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 8px;
+  width: 100%;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.form-container .btn:hover {
+  background-color: #e64560;
+}
+
+.close-btn {
+  background-color: #777;
+}
+
+.close-btn:hover {
+  background-color: #444;
+}  */ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Remove Project Button */
 .remove-btn {
@@ -386,6 +504,25 @@ footer {
 .view-btn:hover {
   background-color: #f43f5e;
 }
+
+.remove-btn {
+  /* background-color: #e64560; */
+  background-color: var(--primary-color);
+  border-radius: 8px;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: small;
+  font-weight: bolder;
+  
+}
+.remove-btn:hover {
+  background-color: #f43f5e;
+}
+
 
 .source {
   background-color: #ff4d4d;
@@ -535,7 +672,8 @@ footer {
   border-radius: 20px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
   width: 90%;
-  max-width: 600px;
+  max-width: 540px;
+  box-sizing: border-box;
 }
 
 .form-container h2 {
@@ -562,6 +700,7 @@ footer {
   border: 1px solid #ccc;
   border-radius: 8px;
   font-size: 16px;
+  box-sizing: border-box;
 }
 
 .form-container textarea {
@@ -592,6 +731,16 @@ footer {
 .close-btn:hover {
   background-color: #999;
 }
+
+
+
+
+
+
+
+
+
+
 .blog-list-container {
   margin: 30px auto;
   padding: 20px;

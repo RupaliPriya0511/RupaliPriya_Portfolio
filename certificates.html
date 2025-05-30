@@ -36,7 +36,7 @@
         <button class="btn" onclick="openForm()">+ Add New Certificate</button>
     </div>
 
-    <!-- Add Certificate Form (Hidden by Default) -->
+    <!-- Add Certificate Form (Hidden by Default)
     <div id="certificate-form" class="form-popup">
         <div class="form-container">
             <h2>Add New Certificate</h2>
@@ -58,7 +58,32 @@
             <button class="btn" onclick="addCertificate()">Add Certificate</button>
             <button class="btn close-btn" onclick="closeForm()">Cancel</button>
         </div>
-    </div>
+    </div> -->
+
+    <!-- Add Certificate Form (Hidden by Default) -->
+<div id="certificate-form" class="form-popup">
+  <div class="form-container">
+    <h2>Add New Certificate</h2>
+
+    <label for="title">Certificate Title</label>
+    <input type="text" id="title" placeholder="Enter certificate title" required>
+
+    <label for="date">Issued Date</label>
+    <input type="date" id="date" required>
+
+    <label for="org">Issuing Organization</label>
+    <input type="text" id="org" placeholder="Enter organization name" required>
+
+    <label for="description">Description</label>
+    <textarea id="description" placeholder="Enter certificate description" required></textarea>
+
+    <label for="link">Certificate Link</label>
+    <input type="url" id="link" placeholder="https://yourcertificate.com" required>
+
+    <button class="btn" onclick="addCertificate()">Add Certificate</button>
+    <button class="btn close-btn" onclick="closeForm()">Cancel</button>
+  </div>
+</div>
     <hr>
     <footer>
         <h3>My Online Presence</h3>
@@ -92,5 +117,7 @@
     </footer>
 
     <script src="certificates.js"></script>
+    <div id="overlay"></div>
+
 </body>
 </html>

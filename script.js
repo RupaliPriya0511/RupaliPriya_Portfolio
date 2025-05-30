@@ -167,11 +167,27 @@ try {
 
 }
 
+// async function loadProjects() {
+//     const res = await fetch(`${BASE_URL}/projects`);
+//     const projects = await res.json();
+//     projects.forEach(addProjectToUI);
+// }
+
 async function loadProjects() {
-    const res = await fetch(`${BASE_URL}/projects`);
-    const projects = await res.json();
-    projects.forEach(addProjectToUI);
+    try {
+        const res = await fetch(`${BASE_URL}/projects`);
+        const projects = await res.json();
+
+        // Sort by date descending
+        projects.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+        projects.forEach(addProjectToUI);
+    } catch (error) {
+        console.error("Error loading projects:", error);
+        alert("Failed to load projects.");
+    }
 }
+
 
 // <button class = "source" onclick = "requestSource(this)">Source</button>
 // Function to Add Project Card to UI
@@ -184,12 +200,14 @@ function addProjectToUI(project) {
         <p><strong>Description:</strong>${project.description}</p>
         <p><strong>Technologies Used:</strong>${project.technologies}</p>
         <a href="${project.link}" target="_blank" class="view-btn">View Project</a>
-        <a href="${project.source}" target="_blank" class="view-btn source-link">Source Code</a>
+        <a href="${project.source}" target="_blank" class="view-btn source-link">Source</a>
         
         <button class="remove-btn" onclick="requestDelete(this)">Remove</button>
     `;
 
-    document.getElementById("project-list").appendChild(projectCard);
+    // document.getElementById("project-list").appendChild(projectCard);
+    document.getElementById("project-list").prepend(projectCard);
+
 }
 
 
