@@ -31,11 +31,23 @@ app.get('/projects', async (req, res) => {
     res.json(projects);
 });
 
+// app.post('/projects', async (req, res) => {
+//     const newProject = new Project(req.body);
+//     await newProject.save();
+//     res.json(newProject);
+// });
+
 app.post('/projects', async (req, res) => {
-    const newProject = new Project(req.body);
-    await newProject.save();
-    res.json(newProject);
+    try {
+        const newProject = new Project(req.body);
+        await newProject.save();
+        res.status(201).json(newProject);
+    } catch (err) {
+        console.error("Error saving project:", err.message);
+        res.status(500).json({ error: "Failed to save project" });
+    }
 });
+
 
 app.delete('/projects/:title', async (req, res) => {
     const result = await Project.deleteOne({ title: req.params.title });
@@ -138,6 +150,17 @@ app.delete('/blogs/:id', async (req, res) => {
   
 
   
+
+const path = require('path');
+
+// Serve frontend files from root
+app.use(express.static(path.join(__dirname, '../')));
+
+// Fallback route for SPA or direct HTML page links
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../index.html'));
+});
+
 
 
 const PORT = process.env.PORT || 5000;
